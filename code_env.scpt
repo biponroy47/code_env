@@ -68,7 +68,7 @@ waitForWindow("Safari")
 tell application "System Events"
     tell process "Safari"
         set frontmost to true
-        delay 1
+        delay 2
         set theWindow to window 1
         set position of theWindow to {0, 0}
         set size of theWindow to {735, 956} -- Left half of a 1470x956 screen
