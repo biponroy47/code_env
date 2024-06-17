@@ -40,7 +40,7 @@ tell application "System Events"
         set frontmost to true
         delay 1
         set theWindow to window 1
-        set position of theWindow to {0, 0}
+        set position of theWindow to {1920, 0}
         set size of theWindow to {960, 1080} 
         keystroke "j" using {command down, option down} 
     end tell
@@ -49,7 +49,6 @@ end tell
 tell application "Safari"
     activate
     delay 2 -- Allow Safari to launch
-    make new document
 end tell
 
 waitForWindow("Safari")
